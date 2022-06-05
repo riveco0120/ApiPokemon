@@ -5,6 +5,6 @@ import { Component} from '@angular/core';
   templateUrl: './body.component.html',
 })
 export class BodyComponent {
-  titulo="Lista de pokemons"
+  titulo="pokemons"
 
 }
