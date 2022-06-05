@@ -4,11 +4,14 @@
             <label class="label label-default" for="">Nombre:</label>
           </div>
         <div class="col-4">
-        <input  class="form-control" type="text" placeholder="Nombre pokemon">
+        <input  class="form-control" type="text" placeholder="Nombre pokemon" [(ngModel)]="nombrePokemon">
       </div>
       <div class="col-4">
-        <button class="btn btn-primary">Buscar</button>
+        <button class="btn btn-primary" (click)="search()">Buscar</button>
       </div>
     </div>
     <hr>
+    <div class="row">
+          <img src="{{urlImg}}" alt="Imagen del pokemon">
+    </div>
   </div>
