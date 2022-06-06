@@ -17,13 +17,24 @@
   </div>
   <hr />
   <div class="row">
-    <div class="col-4">
-      <div class="container-fluid">
-        <img src="{{ urlImg }}" width="300px" class="img-cicle" />
+    <div class="row justify-content-start">
+      <div class="col">
+        <div class="container-fluid">
+          <img src="{{ urlImg }}" width="200px" class="img-cicle" />
+        </div>
       </div>
-    </div>
-    <div class="col-8">
-      <app-estadistica></app-estadistica>
+      <div class="col">
+        <h1>Estadistica</h1>
+        <h6>Nombre : {{nombreReal}}</h6>
+        <h6>ID : {{id}}</h6>
+        <h6>Experiencia : {{  experiencia}}</h6>
+        <h6>Localizacion : {{localizacion}}</h6>
+        <h6>Orden : {{orde}}</h6>
+        <h6>Tamaño : {{tamano}}</h6>
+      </div>
+      <div class="col">
+        <app-estadistica></app-estadistica>
+      </div>
     </div>
   </div>
 </div>
