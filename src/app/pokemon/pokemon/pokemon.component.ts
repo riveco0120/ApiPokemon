@@ -15,8 +15,16 @@ export class PokemonComponent {
     }
 
     //Consumiendo la api con una subcribe 
-    search(){
+    mostrarPokemon(){
+      if(this.nombrePokemon==""){
+        alert("Debe ingresar un nombre valido")
+        this.nombrePokemon="";
+       }
+       else {
       this.characterService.getPokemon(this.nombrePokemon).subscribe((pokemon:any)=>
         this.urlImg = pokemon.sprites.front_default);
+       }
     }
+
+    
 }

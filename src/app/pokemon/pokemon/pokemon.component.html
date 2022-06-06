@@ -1,17 +1,29 @@
 <div class="container">
-    <div class="row">
-        <div class="col-4">
-            <label class="label label-default" for="">Nombre:</label>
-          </div>
-        <div class="col-4">
-        <input  class="form-control" type="text" placeholder="Nombre pokemon" [(ngModel)]="nombrePokemon">
-      </div>
-      <div class="col-4">
-        <button class="btn btn-primary" (click)="search()">Buscar</button>
-      </div>
+  <div class="row">
+    <div class="col-4">
+      <label class="label label-default" for="">Nombre:</label>
     </div>
-    <hr>
-    <div class="row">
-          <img src="{{urlImg}}" class="sr-only">
+    <div class="col-4">
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Nombre pokemon"
+        [(ngModel)]="nombrePokemon"
+      />
+    </div>
+    <div class="col-4">
+      <button class="btn btn-primary" (click)="mostrarPokemon()">Buscar</button>
     </div>
   </div>
+  <hr />
+  <div class="row">
+    <div class="col-4">
+      <div class="container-fluid">
+        <img src="{{ urlImg }}" width="300px" class="img-cicle" />
+      </div>
+    </div>
+    <div class="col-8">
+      <app-estadistica></app-estadistica>
+    </div>
+  </div>
+</div>
